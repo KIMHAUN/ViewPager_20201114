@@ -14,7 +14,7 @@ class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         return 3
     }
 
-    //위치에 맞는 프래그먼트 리턴
+    //position에 맞는 프래그먼트(생성자로 객체화해서) 리턴
     override fun getItem(position: Int): Fragment {
          if(position == 0){
              return NameFragment()
