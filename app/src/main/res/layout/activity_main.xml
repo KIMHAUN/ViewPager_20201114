@@ -8,14 +8,12 @@
     tools:context=".MainActivity">
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/mainTabLayout"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        app:tabMode="scrollable"
+        app:tabIndicatorColor="#FF0000"
         />
-
-
-
+    <!--app:은 TabLayout의 고유한 속성-->
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/mainViewPager"
