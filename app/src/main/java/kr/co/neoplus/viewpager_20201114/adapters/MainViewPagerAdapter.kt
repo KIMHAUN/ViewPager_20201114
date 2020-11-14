@@ -14,8 +14,21 @@ class MainViewPagerAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
         return 3
     }
 
+    //제목 설정하기
+    override fun getPageTitle(position: Int): CharSequence? {
+        if(position == 0){
+            return "이름"
+        }
+        else if(position == 1){
+            return "출생년도"
+        }else{
+            return "거주지"
+        }
+    }
     //position에 맞는 프래그먼트(생성자로 객체화해서) 리턴
     override fun getItem(position: Int): Fragment {
+
+
          if(position == 0){
              return NameFragment()
          }
